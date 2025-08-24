@@ -10,8 +10,8 @@ services:
           name: result-db
           property: connectionString
       - key: SECRET_KEY
-        generateValue: true # Automatically generate a secret key
+        generateValue: true
 
-  - type: psql
+  - type: postgres
     name: result-db
-    ipAllowList: [] # Allow all IPs to connect
+    ipAllowList: []
