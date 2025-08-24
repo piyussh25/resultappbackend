@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import List
 
-from . import crud, models, schemas, auth, parser
+import crud, models, schemas, auth, parser
 from .database import SessionLocal, engine
 
 models.Base.metadata.create_all(bind=engine)

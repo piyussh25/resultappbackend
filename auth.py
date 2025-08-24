@@ -3,9 +3,9 @@ from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
-from . import schemas, crud
+import schemas, crud
 from sqlalchemy.orm import Session
-from .database import SessionLocal
+from database import SessionLocal
 
 import os
 
